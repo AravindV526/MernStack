@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+</head>
+<body>
+    <script>
+        const student = {
+            personalDetails: {
+                name: "Aravind.V",
+                regNo: 711223104013,
+                department: "Computer Science and Engineering",
+                parentsDetails: {
+                    mother: {
+                        name: "Parimala.V",
+                        phoneNumber: 9843591804,
+                        occupation: "Housewife"
+                    },
+                    father: {
+                        name: "Vellingiri.N",
+                        phoneNumber: 9843591804,
+                        occupation: "Foreman in Knitwear"
+                    }
+                },
+                address: {
+                    doorNo: "!0/w",
+                    street: "Arul Nagar",
+                    city: "Tirupur",
+                    state: "Tamil Nadu",
+                    pincode: 641606
+                },
+                dateOfBirth: "05-06-2006",
+                mobileNumber: 9361314946
+            },
+            marks: [
+                {
+                    semester: 5,
+                    subjects: [
+                        { subject: "Distributed computing", marks: 74, isArrear: false },
+                        { subject: "Web Technology", marks: 74, isArrear: false },
+                        { subject: "compiler design", marks: 74, isArrear: false },
+                        { subject: "computer networks", marks: 74, isArrear: false }
+                    ]
+                }
+            ],
+            attendance: [
+                {
+                    date: "2023-05-01",
+                    isPresent: true
+                }
+            ],
+            fees: [
+                {
+                    semesterNo: 5,
+                    busFeesPaid: false,
+                    hostelFeesPaid: false,
+                    bookFeesPaid: false,
+                    examFeesPaid: false
+                }
+            ]
+        };
+        console.log(student);
+    </script>
+</body>
+</html>

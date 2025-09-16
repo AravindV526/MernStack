@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        let Me = {
+            Name: "Aravind.V",
+            Age: 20,
+            IsIndian: true,
+            Hobby: ['tennis', 'cricket'],
+            Address: "ArulNagar,KovilVazhi",
+            City: "Tiruppur"
+        };
+
+        let html = `
+            <h2>Profile</h2>
+            <p><strong>Name:</strong> ${Me.Name}</p>
+            <p><strong>Age:</strong> ${Me.Age}</p>
+            <p><strong>Is Indian:</strong> ${Me.IsIndian ? "Yes" : "No"}</p>
+            <p><strong>Hobby:</strong> ${Me.Hobby.join(', ')}</p>
+            <p><strong>Address:</strong> ${Me.Address}</p>
+            <p><strong>City:</strong> ${Me.City}</p>
+        `;
+
+        document.getElementById('output').innerHTML = html;
+    </script>
+</body>
+</html>

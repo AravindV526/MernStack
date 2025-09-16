@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Flexbox Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;              
+      flex-direction: column; 
+      align-items: center;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      color: darkblue;
+      margin-bottom: 20px;
+    }
+    #main-box {
+      border: 3px solid red;
+      margin: 20px;
+      padding: 20px;
+      background-color: lightyellow;
+      width: 300px;
+      text-align: center;
+    }
+    .highlight {
+      border: 2px dashed green;
+      margin: 20px;
+      padding: 15px;
+      background-color: lightblue;
+      width: 300px;
+      text-align: center;
+    }
+    .parent {
+      display: flex;
+      width: 100%;
+      margin-top: 20px;
+    }
+    .child {
+      height: 200px;
+      flex: 1; /* equal width for all children */
+    }
+    .red {
+      background-color: red;
+    }
+    .green {
+      background-color: green;
+    }
+    .blue {
+      background-color: blue;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Flexbox + Margin + Padding</h1>
+
+  <div id="main-box">
+    <p>This is the <b>main box</b> styled with an <b>ID selector</b>.</p>
+    <p>It has margin outside and padding inside.</p>
+  </div>
+
+  <p class="highlight">
+    I am a <b>paragraph</b> styled with a <b>class selector</b>.  
+    Notice my dashed border, margin around me, and padding inside me.
+  </p>
+
+  <div class="parent">
+    <div class="child red"></div>
+    <div class="child blue"></div>
+    <div class="child green"></div>
+  </div>
+</body>
+</html>

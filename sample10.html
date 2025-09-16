@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Example</title>
+</head>
+<body>
+    <script>
+        let marks = [
+            {
+                semester: 1,
+                subject: "Compiler Design",
+                marks: 98,
+                ifarrear: false
+            },
+            {
+                semester: 1,
+                subject: "Data Structures",
+                marks: 85,
+                ifarrear: false
+            },
+            {
+                semester: 1,
+                subject: "Mathematics",
+                marks: 90,
+                ifarrear: false
+            }
+        ];
+        let firstSem = marks.filter(val => val.semester === 1);
+        console.log("Semester 1 subjects:", firstSem);
+    </script>
+</body>
+</html>
